@@ -1,0 +1,6 @@
+framework module Pods_RxSamplesUITests {
+  umbrella header "Pods-RxSamplesUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
