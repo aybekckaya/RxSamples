@@ -11,6 +11,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ContentsVC" customModule="RxSamples" customModuleProvider="target">
             <connections>
+                <outlet property="tableviewContents" destination="0lc-T9-UzP" id="1Xe-wd-9ZP"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -18,7 +19,19 @@
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="0lc-T9-UzP">
+                    <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </tableView>
+            </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="0lc-T9-UzP" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="7r5-wT-aPy"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="0lc-T9-UzP" secondAttribute="bottom" id="HzA-vJ-WEV"/>
+                <constraint firstItem="0lc-T9-UzP" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="Txt-9c-kZn"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="0lc-T9-UzP" secondAttribute="trailing" id="Vog-tH-2KV"/>
+            </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
         </view>
     </objects>

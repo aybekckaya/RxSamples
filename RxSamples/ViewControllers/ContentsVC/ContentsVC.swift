@@ -7,13 +7,56 @@
 //
 
 import UIKit
+import RxSwift
+import RxCocoa
 
 class ContentsVC: UIViewController {
 
+    enum Content:String {
+        case networking  = "Networking with RxSwift"
+        
+        func viewController()->UIViewController {
+            switch self {
+            case .networking:
+                return RxNetworkVC(nibName: "RxNetworkVC", bundle: nil)
+            default:
+                break
+            }
+        }
+    }
+    
+    fileprivate let contentsArr = [Content.networking]
+    
+    fileprivate let disposeBag = DisposeBag()
+    
+    @IBOutlet weak var tableviewContents: UITableView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        
+        let vc = Content.networking.viewController()
+        navigationController?.pushViewController(vc, animated: false)
+        return
+            
+        setUpRx()
+    }
+    
+    func setUpRx() {
+        let cellNib = UINib(nibName: ContentCell.identifier, bundle: nil)
+        tableviewContents.register(cellNib, forCellReuseIdentifier: ContentCell.identifier)
+        
+        tableviewContents.tableFooterView = UIView()
+        let contents = Observable.of(contentsArr)
+        contents.bind(to: tableviewContents.rx.items(cellIdentifier: ContentCell.identifier,cellType:ContentCell.self)){(row,element,cell) in
+            cell.update(contentTitle: element.rawValue)
+        }.disposed(by: disposeBag)
+     
+        tableviewContents.rx.itemSelected.subscribe(onNext: { [weak self] indexPath in
+            let vc = self?.contentsArr[indexPath.row].viewController()
+            self?.navigationController?.pushViewController(vc!, animated: true)
+        }).addDisposableTo(disposeBag)
     }
 
     override func didReceiveMemoryWarning() {
