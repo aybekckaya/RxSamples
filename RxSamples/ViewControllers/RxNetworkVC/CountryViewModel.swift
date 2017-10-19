@@ -16,7 +16,7 @@ class CountryViewModel: NSObject {
     
     fileprivate let disposeBag = DisposeBag()
     fileprivate var provider: RxMoyaProvider<CountryEndpoint>!
-    fileprivate var countriesArr:[Country] = [] {
+    var countriesArr:[Country] = [] {
         didSet{
             countries.onNext(countriesArr)
         }
@@ -25,8 +25,15 @@ class CountryViewModel: NSObject {
     var countryName:Observable<String>?
     var countries = BehaviorSubject<[Country]>(value:[])
     
+    func setProvider(theProvider:RxMoyaProvider<CountryEndpoint>) {
+        provider = theProvider
+    }
+    
+    
     func setUpRx() {
-        provider = RxMoyaProvider<CountryEndpoint>()
+        if provider == nil {
+             provider = RxMoyaProvider<CountryEndpoint>()
+        }
         countryName?.subscribe(onNext: { (text) in
             guard !text.isEmpty else {
                 self.countries.onNext(self.countriesArr)

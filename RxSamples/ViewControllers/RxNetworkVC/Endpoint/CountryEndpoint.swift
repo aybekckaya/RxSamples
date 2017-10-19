@@ -14,14 +14,27 @@ import Moya
 enum CountryEndpoint {
     case all
     case country(name:String)
+    
+    func readJson(from fileName:String)->Data {
+        let url = Bundle.main.url(forResource: fileName, withExtension: "json")!
+        return try! Data(contentsOf:url)
+    }
+    
 }
 
 
 extension CountryEndpoint:TargetType {
     
     var sampleData: Data {
-        return "sample-data".data(using: String.Encoding.utf8)!
+        switch self {
+        case .all:
+            return readJson(from:"all")
+        case .country(let name):
+            return readJson(from:"all")
+        }
     }
+    
+    
     
     var baseURL: URL { return URL(string: "https://restcountries.eu/rest/v2/")! }
     var path:String {
@@ -48,3 +61,8 @@ extension CountryEndpoint:TargetType {
         return JSONEncoding.default
     }
 }
+
+
+
+
+

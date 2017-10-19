@@ -10,6 +10,10 @@ import UIKit
 import RxSwift
 import RxCocoa
 
+
+// DATA : https://restcountries.eu/#api-endpoints-all
+
+
 class RxNetworkVC: UIViewController,UITableViewDelegate {
 
     fileprivate let searchController = UISearchController(searchResultsController: nil)
@@ -43,12 +47,17 @@ class RxNetworkVC: UIViewController,UITableViewDelegate {
         searchController.dimsBackgroundDuringPresentation = false
         definesPresentationContext = true
         tableviewCountry.tableHeaderView = searchController.searchBar
+        tableviewCountry.keyboardDismissMode = UIScrollViewKeyboardDismissMode.onDrag
         
         viewModel.countryName = searchController.searchBar
             .rx.text
             .orEmpty
             .debounce(0.5, scheduler: MainScheduler.instance)
             .distinctUntilChanged()
+        
+        searchController.rx.didDismiss.subscribe(onNext: { _ in
+            self.viewModel.countries.onNext(self.viewModel.countriesArr)
+        }).addDisposableTo(disposeBag)
         
         viewModel.countries.bind(to: tableviewCountry.rx.items(cellIdentifier: CountryCell.identifier,cellType:CountryCell.self)){(row,element,cell) in
             cell.update(countryName: element.name!)

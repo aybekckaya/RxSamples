@@ -64,6 +64,10 @@
 		A343D72B1F93925B00678CD8 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = A343D72A1F93925A00678CD8 /* SwiftyJSON.swift */; };
 		A343D72C1F93926800678CD8 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = A343D72A1F93925A00678CD8 /* SwiftyJSON.swift */; };
 		A343D72D1F93926A00678CD8 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = A343D72A1F93925A00678CD8 /* SwiftyJSON.swift */; };
+		A35F075D1F97C3DE002FB42E /* all.json in Resources */ = {isa = PBXBuildFile; fileRef = A35F075C1F97C3DE002FB42E /* all.json */; };
+		A35F075E1F97C3DE002FB42E /* all.json in Resources */ = {isa = PBXBuildFile; fileRef = A35F075C1F97C3DE002FB42E /* all.json */; };
+		A35F075F1F97C3DE002FB42E /* all.json in Resources */ = {isa = PBXBuildFile; fileRef = A35F075C1F97C3DE002FB42E /* all.json */; };
+		A35F07611F97C4CD002FB42E /* RxNetworkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A35F07601F97C4CD002FB42E /* RxNetworkTests.swift */; };
 		A3C9C56B1F8FCC2E0085BF4C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3C9C56A1F8FCC2E0085BF4C /* AppDelegate.swift */; };
 		A3C9C5731F8FCC2E0085BF4C /* RxSamples.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A3C9C5711F8FCC2E0085BF4C /* RxSamples.xcdatamodeld */; };
 		A3C9C5751F8FCC2E0085BF4C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A3C9C5741F8FCC2E0085BF4C /* Assets.xcassets */; };
@@ -120,6 +124,8 @@
 		A343D71E1F93840D00678CD8 /* CountryCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CountryCell.xib; sourceTree = "<group>"; };
 		A343D7261F93908000678CD8 /* Country.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Country.swift; sourceTree = "<group>"; };
 		A343D72A1F93925A00678CD8 /* SwiftyJSON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
+		A35F075C1F97C3DE002FB42E /* all.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = all.json; sourceTree = "<group>"; };
+		A35F07601F97C4CD002FB42E /* RxNetworkTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxNetworkTests.swift; sourceTree = "<group>"; };
 		A3C9C5671F8FCC2E0085BF4C /* RxSamples.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RxSamples.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3C9C56A1F8FCC2E0085BF4C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A3C9C5721F8FCC2E0085BF4C /* RxSamples.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = RxSamples.xcdatamodel; sourceTree = "<group>"; };
@@ -275,6 +281,14 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
+		A35F075B1F97C3B5002FB42E /* SampleDatas */ = {
+			isa = PBXGroup;
+			children = (
+				A35F075C1F97C3DE002FB42E /* all.json */,
+			);
+			path = SampleDatas;
+			sourceTree = "<group>";
+		};
 		A3C9C55E1F8FCC2E0085BF4C = {
 			isa = PBXGroup;
 			children = (
@@ -300,6 +314,7 @@
 		A3C9C5691F8FCC2E0085BF4C /* RxSamples */ = {
 			isa = PBXGroup;
 			children = (
+				A35F075B1F97C3B5002FB42E /* SampleDatas */,
 				A343D72A1F93925A00678CD8 /* SwiftyJSON.swift */,
 				A343D7051F9373CB00678CD8 /* Extensions */,
 				A3C9C59B1F8FCCDD0085BF4C /* ViewControllers */,
@@ -317,6 +332,7 @@
 			children = (
 				A3C9C5821F8FCC2E0085BF4C /* RxSamplesTests.swift */,
 				A3C9C5841F8FCC2E0085BF4C /* Info.plist */,
+				A35F07601F97C4CD002FB42E /* RxNetworkTests.swift */,
 			);
 			path = RxSamplesTests;
 			sourceTree = "<group>";
@@ -479,6 +495,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A35F075D1F97C3DE002FB42E /* all.json in Resources */,
 				A343D7221F93840D00678CD8 /* CountryCell.xib in Resources */,
 				03B5EFA71F989C110076B7C3 /* FormCell.xib in Resources */,
 				A3C9C5781F8FCC2E0085BF4C /* LaunchScreen.storyboard in Resources */,
@@ -495,6 +512,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A35F075E1F97C3DE002FB42E /* all.json in Resources */,
 				A343D7231F93840D00678CD8 /* CountryCell.xib in Resources */,
 				A343D7111F937B0400678CD8 /* RxNetworkVC.xib in Resources */,
 				03B5EF9B1F989B1A0076B7C3 /* FormVC.xib in Resources */,
@@ -509,6 +527,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A35F075F1F97C3DE002FB42E /* all.json in Resources */,
 				A343D7241F93840D00678CD8 /* CountryCell.xib in Resources */,
 				A343D7121F937B0400678CD8 /* RxNetworkVC.xib in Resources */,
 				03B5EF9C1F989B1A0076B7C3 /* FormVC.xib in Resources */,
@@ -690,6 +709,7 @@
 				03B5EF9F1F989BA20076B7C3 /* FormViewModel.swift in Sources */,
 				A343D7201F93840D00678CD8 /* CountryCell.swift in Sources */,
 				A343D7281F93908000678CD8 /* Country.swift in Sources */,
+				A35F07611F97C4CD002FB42E /* RxNetworkTests.swift in Sources */,
 				A343D7081F93766E00678CD8 /* UIView+nibLoad.swift in Sources */,
 				A343D72C1F93926800678CD8 /* SwiftyJSON.swift in Sources */,
 				A343D70E1F937B0400678CD8 /* RxNetworkVC.swift in Sources */,

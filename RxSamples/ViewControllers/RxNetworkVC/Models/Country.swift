@@ -18,7 +18,7 @@ struct Country {
     init(json: JSON) {
         name = json["name"].string
         flagPath = json["flag"].string
-        callingCode = json["callingCode"][0].string
+        callingCode = json["callingCode"] == nil ? nil:json["callingCode"][0].string
     }
    
 }
