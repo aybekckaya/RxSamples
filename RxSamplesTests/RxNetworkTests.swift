@@ -19,6 +19,7 @@ class RxNetworkTests: XCTestCase {
     override func setUp() {
         super.setUp()
         // Put setup code here. This method is called before the invocation of each test method in the class.
+        continueAfterFailure = false
     }
     
     override func tearDown() {
@@ -31,8 +32,12 @@ class RxNetworkTests: XCTestCase {
         model.setProvider(theProvider:RxMoyaProvider<CountryEndpoint>(stubClosure: MoyaProvider.immediatelyStub))
         model.setAllCountries()
         XCTAssert(model.countriesArr.count > 0, "Countries count cannot be zero")
-    }
         
+        let beautifulPlace = model.countriesArr.first { $0.name?.lowercased() == "uruguay" }
+        XCTAssert(beautifulPlace != nil , "There should be a place to live in ")
+        XCTAssert(beautifulPlace?.name?.lowercased() == "uruguay" , "Beautiful place should be Uruguay :)))) ")
+    }
+    
     
     func testPerformanceExample() {
         // This is an example of a performance test case.

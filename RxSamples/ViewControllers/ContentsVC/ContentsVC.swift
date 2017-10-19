@@ -22,13 +22,11 @@ class ContentsVC: UIViewController {
                 return RxNetworkVC(nibName: "RxNetworkVC", bundle: nil)
             case .formPage:
                 return FormVC(nibName: "FormVC", bundle: nil)
-            default:
-                break
             }
         }
     }
     
-    fileprivate let contentsArr = [Content.networking]
+    fileprivate let contentsArr = [Content.networking , Content.formPage]
     
     fileprivate let disposeBag = DisposeBag()
     
@@ -38,18 +36,24 @@ class ContentsVC: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        routeApp()
+    }
+    
+    
+    private func routeApp() {
         
-        /*
-        let vc = Content.networking.viewController()
-        navigationController?.pushViewController(vc, animated: false)
-        return
-           */
-        
-        let vc = Content.formPage.viewController()
-        navigationController?.pushViewController(vc, animated: false)
-        return 
-        
-        setUpRx()
+        switch AppConfig.sharedInstance.currentRoute {
+        case .FormRoute:
+            let vc = Content.formPage.viewController()
+            navigationController?.pushViewController(vc, animated: false)
+            break
+        case .NetworkRoute:
+            let vc = Content.networking.viewController()
+            navigationController?.pushViewController(vc, animated: false)
+            break
+        default:
+            setUpRx()
+        }
     }
     
     func setUpRx() {

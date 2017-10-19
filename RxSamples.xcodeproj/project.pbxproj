@@ -31,6 +31,10 @@
 		1669CB3BA458986841DA6845 /* Pods_RxSamplesUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB707CBBAEAB21B34BA64BAB /* Pods_RxSamplesUITests.framework */; };
 		18279A4348CBC7B972B6B2AA /* Pods_RxSamples.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 869DFB679808B1728D5AC3A7 /* Pods_RxSamples.framework */; };
 		76E4FD3801865496FE1A204C /* Pods_RxSamplesTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9EA03678B326AE69832D5DF /* Pods_RxSamplesTests.framework */; };
+		A30AB5551F991EBE00CA1E27 /* AppConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = A30AB5541F991EBE00CA1E27 /* AppConfig.swift */; };
+		A30AB5561F991EBE00CA1E27 /* AppConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = A30AB5541F991EBE00CA1E27 /* AppConfig.swift */; };
+		A30AB5571F991EBE00CA1E27 /* AppConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = A30AB5541F991EBE00CA1E27 /* AppConfig.swift */; };
+		A30AB5591F99266700CA1E27 /* RxNetworkUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A30AB5581F99266700CA1E27 /* RxNetworkUITests.swift */; };
 		A343D6FF1F9373BB00678CD8 /* ContentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A343D6FD1F9373BB00678CD8 /* ContentCell.swift */; };
 		A343D7001F9373BB00678CD8 /* ContentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A343D6FD1F9373BB00678CD8 /* ContentCell.swift */; };
 		A343D7011F9373BB00678CD8 /* ContentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A343D6FD1F9373BB00678CD8 /* ContentCell.swift */; };
@@ -113,6 +117,8 @@
 		0A4352AE6F1E7DC5F937ADC0 /* Pods-RxSamples.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxSamples.release.xcconfig"; path = "Pods/Target Support Files/Pods-RxSamples/Pods-RxSamples.release.xcconfig"; sourceTree = "<group>"; };
 		8285D8F5A6A40672958E7D40 /* Pods-RxSamplesUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxSamplesUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RxSamplesUITests/Pods-RxSamplesUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		869DFB679808B1728D5AC3A7 /* Pods_RxSamples.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxSamples.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A30AB5541F991EBE00CA1E27 /* AppConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConfig.swift; sourceTree = "<group>"; };
+		A30AB5581F99266700CA1E27 /* RxNetworkUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxNetworkUITests.swift; sourceTree = "<group>"; };
 		A343D6FD1F9373BB00678CD8 /* ContentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentCell.swift; sourceTree = "<group>"; };
 		A343D6FE1F9373BB00678CD8 /* ContentCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ContentCell.xib; sourceTree = "<group>"; };
 		A343D7061F93766A00678CD8 /* UIView+nibLoad.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+nibLoad.swift"; sourceTree = "<group>"; };
@@ -323,6 +329,7 @@
 				A3C9C5761F8FCC2E0085BF4C /* LaunchScreen.storyboard */,
 				A3C9C5791F8FCC2E0085BF4C /* Info.plist */,
 				A3C9C5711F8FCC2E0085BF4C /* RxSamples.xcdatamodeld */,
+				A30AB5541F991EBE00CA1E27 /* AppConfig.swift */,
 			);
 			path = RxSamples;
 			sourceTree = "<group>";
@@ -342,6 +349,7 @@
 			children = (
 				A3C9C58D1F8FCC2E0085BF4C /* RxSamplesUITests.swift */,
 				A3C9C58F1F8FCC2E0085BF4C /* Info.plist */,
+				A30AB5581F99266700CA1E27 /* RxNetworkUITests.swift */,
 			);
 			path = RxSamplesUITests;
 			sourceTree = "<group>";
@@ -693,6 +701,7 @@
 				037736611F98E5860024E4C5 /* ButtonCell.swift in Sources */,
 				A3C9C56B1F8FCC2E0085BF4C /* AppDelegate.swift in Sources */,
 				A343D7191F937DD900678CD8 /* CountryEndpoint.swift in Sources */,
+				A30AB5551F991EBE00CA1E27 /* AppConfig.swift in Sources */,
 				A343D7141F937DAD00678CD8 /* CountryViewModel.swift in Sources */,
 				A343D6FF1F9373BB00678CD8 /* ContentCell.swift in Sources */,
 				03B5EF971F989B1A0076B7C3 /* FormVC.swift in Sources */,
@@ -716,6 +725,7 @@
 				A343D7001F9373BB00678CD8 /* ContentCell.swift in Sources */,
 				A3D7F8881F93B00E00D82E20 /* StringExtensions.swift in Sources */,
 				037736621F98E5860024E4C5 /* ButtonCell.swift in Sources */,
+				A30AB5561F991EBE00CA1E27 /* AppConfig.swift in Sources */,
 				A343D7151F937DAD00678CD8 /* CountryViewModel.swift in Sources */,
 				03B5EFA51F989C110076B7C3 /* FormCell.swift in Sources */,
 				03B5EF981F989B1A0076B7C3 /* FormVC.swift in Sources */,
@@ -730,12 +740,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				03B5EFA01F989BA20076B7C3 /* FormViewModel.swift in Sources */,
+				A30AB5571F991EBE00CA1E27 /* AppConfig.swift in Sources */,
 				A343D7211F93840D00678CD8 /* CountryCell.swift in Sources */,
 				A343D7291F93908000678CD8 /* Country.swift in Sources */,
 				A343D7091F93766F00678CD8 /* UIView+nibLoad.swift in Sources */,
 				A343D72D1F93926A00678CD8 /* SwiftyJSON.swift in Sources */,
 				A343D70F1F937B0400678CD8 /* RxNetworkVC.swift in Sources */,
 				A343D7011F9373BB00678CD8 /* ContentCell.swift in Sources */,
+				A30AB5591F99266700CA1E27 /* RxNetworkUITests.swift in Sources */,
 				A3D7F8891F93B00E00D82E20 /* StringExtensions.swift in Sources */,
 				037736631F98E5860024E4C5 /* ButtonCell.swift in Sources */,
 				A343D7161F937DAD00678CD8 /* CountryViewModel.swift in Sources */,

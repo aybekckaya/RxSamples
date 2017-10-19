@@ -32,6 +32,7 @@ class FormVC: UIViewController, UITableViewDelegate , UITableViewDataSource {
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         viewModel.setUpRx()
+        
     }
     
     func setUpRxForm() {
