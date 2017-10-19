@@ -14,9 +14,9 @@ class FormViewModel {
 
     //var observer = PublishSubject<String>()
     
-    var username:Observable<String> = Observable<String>.just("")
-    var email:Observable<String> = Observable<String>.just("")
-    var telephoneNumber:Observable<String> = Observable<String>.just("")
+    var username:Observable<String>?
+    var email:Observable<String>?
+    var telephoneNumber:Observable<String>?
     
     private var disposeBag = DisposeBag()
     
@@ -29,9 +29,15 @@ class FormViewModel {
             }.shareReplay(1)
         */
         
+    }
+    
+    func setUpRx() {
+        username!.subscribe(onNext: { [weak self] text in
+            print("text username : \(text)")
+        }).addDisposableTo(disposeBag)
         
-        username.subscribe(onNext: { [weak self] text in
-             print("text username : \(text)")
+        email!.subscribe(onNext: { [weak self] text in
+             print("text email : \(text)")
         }).addDisposableTo(disposeBag)
         
     }

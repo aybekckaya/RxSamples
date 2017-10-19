@@ -34,8 +34,7 @@ class FormCell: UITableViewCell {
     @IBOutlet weak var textForm: UITextField!
     
     fileprivate var cellType:FormCellType = FormCellType.undefined
-    
-    fileprivate var subject = BehaviorSubject<String>(value:"")
+    private let debounceTime = 0.3
     
     private var disposeBag = DisposeBag()
     
@@ -50,16 +49,18 @@ class FormCell: UITableViewCell {
         selectionStyle = .none
        
         if cellType == .username {
-            subject.bind(to: textForm.rx.text).addDisposableTo(disposeBag)
-            viewModel.username.bind(to: textForm.rx.text).addDisposableTo(disposeBag)
+            viewModel.username = textForm.rx.text
+                .orEmpty
+                .debounce(debounceTime, scheduler: MainScheduler.instance)
+                .distinctUntilChanged()
         }
         else if cellType == .email {
-            viewModel.email.bind(to: textForm.rx.text).addDisposableTo(disposeBag)
+            viewModel.email = textForm.rx.text
+                .orEmpty
+                .debounce(debounceTime, scheduler: MainScheduler.instance)
+                .distinctUntilChanged()
         }
         
-        subject.subscribe(onNext: { text in
-            print("current:\(text)")
-        }).addDisposableTo(disposeBag)
     }
     
     

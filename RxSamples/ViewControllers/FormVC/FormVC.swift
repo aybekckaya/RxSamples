@@ -29,6 +29,11 @@ class FormVC: UIViewController, UITableViewDelegate , UITableViewDataSource {
         setUpRxForm()
     }
     
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        viewModel.setUpRx()
+    }
+    
     func setUpRxForm() {
         let nib = UINib(nibName: FormCell.identifier, bundle: nil)
         tableForm.register(nib, forCellReuseIdentifier: FormCell.identifier)
