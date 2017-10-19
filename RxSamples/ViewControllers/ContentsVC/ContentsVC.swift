@@ -14,11 +14,14 @@ class ContentsVC: UIViewController {
 
     enum Content:String {
         case networking  = "Networking with RxSwift"
+        case formPage = "Form page"
         
         func viewController()->UIViewController {
             switch self {
             case .networking:
                 return RxNetworkVC(nibName: "RxNetworkVC", bundle: nil)
+            case .formPage:
+                return FormVC(nibName: "FormVC", bundle: nil)
             default:
                 break
             }
@@ -36,10 +39,16 @@ class ContentsVC: UIViewController {
 
         // Do any additional setup after loading the view.
         
+        /*
         let vc = Content.networking.viewController()
         navigationController?.pushViewController(vc, animated: false)
         return
-            
+           */
+        
+        let vc = Content.formPage.viewController()
+        navigationController?.pushViewController(vc, animated: false)
+        return 
+        
         setUpRx()
     }
     

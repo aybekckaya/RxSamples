@@ -7,6 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		037736611F98E5860024E4C5 /* ButtonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0377365F1F98E5860024E4C5 /* ButtonCell.swift */; };
+		037736621F98E5860024E4C5 /* ButtonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0377365F1F98E5860024E4C5 /* ButtonCell.swift */; };
+		037736631F98E5860024E4C5 /* ButtonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0377365F1F98E5860024E4C5 /* ButtonCell.swift */; };
+		037736641F98E5860024E4C5 /* ButtonCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 037736601F98E5860024E4C5 /* ButtonCell.xib */; };
+		037736651F98E5860024E4C5 /* ButtonCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 037736601F98E5860024E4C5 /* ButtonCell.xib */; };
+		037736661F98E5860024E4C5 /* ButtonCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 037736601F98E5860024E4C5 /* ButtonCell.xib */; };
+		03B5EF971F989B1A0076B7C3 /* FormVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03B5EF951F989B1A0076B7C3 /* FormVC.swift */; };
+		03B5EF981F989B1A0076B7C3 /* FormVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03B5EF951F989B1A0076B7C3 /* FormVC.swift */; };
+		03B5EF991F989B1A0076B7C3 /* FormVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03B5EF951F989B1A0076B7C3 /* FormVC.swift */; };
+		03B5EF9A1F989B1A0076B7C3 /* FormVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 03B5EF961F989B1A0076B7C3 /* FormVC.xib */; };
+		03B5EF9B1F989B1A0076B7C3 /* FormVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 03B5EF961F989B1A0076B7C3 /* FormVC.xib */; };
+		03B5EF9C1F989B1A0076B7C3 /* FormVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 03B5EF961F989B1A0076B7C3 /* FormVC.xib */; };
+		03B5EF9E1F989BA20076B7C3 /* FormViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03B5EF9D1F989BA20076B7C3 /* FormViewModel.swift */; };
+		03B5EF9F1F989BA20076B7C3 /* FormViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03B5EF9D1F989BA20076B7C3 /* FormViewModel.swift */; };
+		03B5EFA01F989BA20076B7C3 /* FormViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03B5EF9D1F989BA20076B7C3 /* FormViewModel.swift */; };
+		03B5EFA41F989C110076B7C3 /* FormCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03B5EFA21F989C110076B7C3 /* FormCell.swift */; };
+		03B5EFA51F989C110076B7C3 /* FormCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03B5EFA21F989C110076B7C3 /* FormCell.swift */; };
+		03B5EFA61F989C110076B7C3 /* FormCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03B5EFA21F989C110076B7C3 /* FormCell.swift */; };
+		03B5EFA71F989C110076B7C3 /* FormCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 03B5EFA31F989C110076B7C3 /* FormCell.xib */; };
+		03B5EFA81F989C110076B7C3 /* FormCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 03B5EFA31F989C110076B7C3 /* FormCell.xib */; };
+		03B5EFA91F989C110076B7C3 /* FormCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 03B5EFA31F989C110076B7C3 /* FormCell.xib */; };
 		1669CB3BA458986841DA6845 /* Pods_RxSamplesUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB707CBBAEAB21B34BA64BAB /* Pods_RxSamplesUITests.framework */; };
 		18279A4348CBC7B972B6B2AA /* Pods_RxSamples.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 869DFB679808B1728D5AC3A7 /* Pods_RxSamples.framework */; };
 		76E4FD3801865496FE1A204C /* Pods_RxSamplesTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9EA03678B326AE69832D5DF /* Pods_RxSamplesTests.framework */; };
@@ -78,6 +99,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0377365F1F98E5860024E4C5 /* ButtonCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonCell.swift; sourceTree = "<group>"; };
+		037736601F98E5860024E4C5 /* ButtonCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ButtonCell.xib; sourceTree = "<group>"; };
+		03B5EF951F989B1A0076B7C3 /* FormVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormVC.swift; sourceTree = "<group>"; };
+		03B5EF961F989B1A0076B7C3 /* FormVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FormVC.xib; sourceTree = "<group>"; };
+		03B5EF9D1F989BA20076B7C3 /* FormViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormViewModel.swift; sourceTree = "<group>"; };
+		03B5EFA21F989C110076B7C3 /* FormCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormCell.swift; sourceTree = "<group>"; };
+		03B5EFA31F989C110076B7C3 /* FormCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FormCell.xib; sourceTree = "<group>"; };
 		0A4352AE6F1E7DC5F937ADC0 /* Pods-RxSamples.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxSamples.release.xcconfig"; path = "Pods/Target Support Files/Pods-RxSamples/Pods-RxSamples.release.xcconfig"; sourceTree = "<group>"; };
 		8285D8F5A6A40672958E7D40 /* Pods-RxSamplesUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxSamplesUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RxSamplesUITests/Pods-RxSamplesUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		869DFB679808B1728D5AC3A7 /* Pods_RxSamples.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxSamples.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -143,6 +171,44 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0377365D1F98E5570024E4C5 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				0377365E1F98E5640024E4C5 /* ButtonCell */,
+				03B5EFA11F989BFD0076B7C3 /* FormCell */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		0377365E1F98E5640024E4C5 /* ButtonCell */ = {
+			isa = PBXGroup;
+			children = (
+				0377365F1F98E5860024E4C5 /* ButtonCell.swift */,
+				037736601F98E5860024E4C5 /* ButtonCell.xib */,
+			);
+			path = ButtonCell;
+			sourceTree = "<group>";
+		};
+		03B5EF941F989AF70076B7C3 /* FormVC */ = {
+			isa = PBXGroup;
+			children = (
+				0377365D1F98E5570024E4C5 /* Cells */,
+				03B5EF951F989B1A0076B7C3 /* FormVC.swift */,
+				03B5EF961F989B1A0076B7C3 /* FormVC.xib */,
+				03B5EF9D1F989BA20076B7C3 /* FormViewModel.swift */,
+			);
+			path = FormVC;
+			sourceTree = "<group>";
+		};
+		03B5EFA11F989BFD0076B7C3 /* FormCell */ = {
+			isa = PBXGroup;
+			children = (
+				03B5EFA21F989C110076B7C3 /* FormCell.swift */,
+				03B5EFA31F989C110076B7C3 /* FormCell.xib */,
+			);
+			path = FormCell;
+			sourceTree = "<group>";
+		};
 		459648906E2BECD37B4D3582 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -267,6 +333,7 @@
 		A3C9C59B1F8FCCDD0085BF4C /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				03B5EF941F989AF70076B7C3 /* FormVC */,
 				A343D70A1F937AE700678CD8 /* RxNetworkVC */,
 				A3C9C5A41F8FCD0A0085BF4C /* ContentsVC */,
 			);
@@ -413,10 +480,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				A343D7221F93840D00678CD8 /* CountryCell.xib in Resources */,
+				03B5EFA71F989C110076B7C3 /* FormCell.xib in Resources */,
 				A3C9C5781F8FCC2E0085BF4C /* LaunchScreen.storyboard in Resources */,
 				A3C9C5A11F8FCCFA0085BF4C /* ContentsVC.xib in Resources */,
 				A343D7101F937B0400678CD8 /* RxNetworkVC.xib in Resources */,
 				A3C9C5751F8FCC2E0085BF4C /* Assets.xcassets in Resources */,
+				037736641F98E5860024E4C5 /* ButtonCell.xib in Resources */,
+				03B5EF9A1F989B1A0076B7C3 /* FormVC.xib in Resources */,
 				A343D7021F9373BB00678CD8 /* ContentCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -427,6 +497,9 @@
 			files = (
 				A343D7231F93840D00678CD8 /* CountryCell.xib in Resources */,
 				A343D7111F937B0400678CD8 /* RxNetworkVC.xib in Resources */,
+				03B5EF9B1F989B1A0076B7C3 /* FormVC.xib in Resources */,
+				03B5EFA81F989C110076B7C3 /* FormCell.xib in Resources */,
+				037736651F98E5860024E4C5 /* ButtonCell.xib in Resources */,
 				A3C9C5A21F8FCCFA0085BF4C /* ContentsVC.xib in Resources */,
 				A343D7031F9373BB00678CD8 /* ContentCell.xib in Resources */,
 			);
@@ -438,6 +511,9 @@
 			files = (
 				A343D7241F93840D00678CD8 /* CountryCell.xib in Resources */,
 				A343D7121F937B0400678CD8 /* RxNetworkVC.xib in Resources */,
+				03B5EF9C1F989B1A0076B7C3 /* FormVC.xib in Resources */,
+				03B5EFA91F989C110076B7C3 /* FormCell.xib in Resources */,
+				037736661F98E5860024E4C5 /* ButtonCell.xib in Resources */,
 				A3C9C5A31F8FCCFA0085BF4C /* ContentsVC.xib in Resources */,
 				A343D7041F9373BB00678CD8 /* ContentCell.xib in Resources */,
 			);
@@ -592,13 +668,17 @@
 				A3C9C5731F8FCC2E0085BF4C /* RxSamples.xcdatamodeld in Sources */,
 				A343D70D1F937B0400678CD8 /* RxNetworkVC.swift in Sources */,
 				A343D7071F93766E00678CD8 /* UIView+nibLoad.swift in Sources */,
+				03B5EF9E1F989BA20076B7C3 /* FormViewModel.swift in Sources */,
 				A343D72B1F93925B00678CD8 /* SwiftyJSON.swift in Sources */,
 				A3C9C59E1F8FCCFA0085BF4C /* ContentsVC.swift in Sources */,
+				037736611F98E5860024E4C5 /* ButtonCell.swift in Sources */,
 				A3C9C56B1F8FCC2E0085BF4C /* AppDelegate.swift in Sources */,
 				A343D7191F937DD900678CD8 /* CountryEndpoint.swift in Sources */,
 				A343D7141F937DAD00678CD8 /* CountryViewModel.swift in Sources */,
 				A343D6FF1F9373BB00678CD8 /* ContentCell.swift in Sources */,
+				03B5EF971F989B1A0076B7C3 /* FormVC.swift in Sources */,
 				A343D7271F93908000678CD8 /* Country.swift in Sources */,
+				03B5EFA41F989C110076B7C3 /* FormCell.swift in Sources */,
 				A343D71F1F93840D00678CD8 /* CountryCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -607,6 +687,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				03B5EF9F1F989BA20076B7C3 /* FormViewModel.swift in Sources */,
 				A343D7201F93840D00678CD8 /* CountryCell.swift in Sources */,
 				A343D7281F93908000678CD8 /* Country.swift in Sources */,
 				A343D7081F93766E00678CD8 /* UIView+nibLoad.swift in Sources */,
@@ -614,7 +695,10 @@
 				A343D70E1F937B0400678CD8 /* RxNetworkVC.swift in Sources */,
 				A343D7001F9373BB00678CD8 /* ContentCell.swift in Sources */,
 				A3D7F8881F93B00E00D82E20 /* StringExtensions.swift in Sources */,
+				037736621F98E5860024E4C5 /* ButtonCell.swift in Sources */,
 				A343D7151F937DAD00678CD8 /* CountryViewModel.swift in Sources */,
+				03B5EFA51F989C110076B7C3 /* FormCell.swift in Sources */,
+				03B5EF981F989B1A0076B7C3 /* FormVC.swift in Sources */,
 				A343D71A1F937DD900678CD8 /* CountryEndpoint.swift in Sources */,
 				A3C9C59F1F8FCCFA0085BF4C /* ContentsVC.swift in Sources */,
 				A3C9C5831F8FCC2E0085BF4C /* RxSamplesTests.swift in Sources */,
@@ -625,6 +709,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				03B5EFA01F989BA20076B7C3 /* FormViewModel.swift in Sources */,
 				A343D7211F93840D00678CD8 /* CountryCell.swift in Sources */,
 				A343D7291F93908000678CD8 /* Country.swift in Sources */,
 				A343D7091F93766F00678CD8 /* UIView+nibLoad.swift in Sources */,
@@ -632,7 +717,10 @@
 				A343D70F1F937B0400678CD8 /* RxNetworkVC.swift in Sources */,
 				A343D7011F9373BB00678CD8 /* ContentCell.swift in Sources */,
 				A3D7F8891F93B00E00D82E20 /* StringExtensions.swift in Sources */,
+				037736631F98E5860024E4C5 /* ButtonCell.swift in Sources */,
 				A343D7161F937DAD00678CD8 /* CountryViewModel.swift in Sources */,
+				03B5EFA61F989C110076B7C3 /* FormCell.swift in Sources */,
+				03B5EF991F989B1A0076B7C3 /* FormVC.swift in Sources */,
 				A343D71B1F937DD900678CD8 /* CountryEndpoint.swift in Sources */,
 				A3C9C5A01F8FCCFA0085BF4C /* ContentsVC.swift in Sources */,
 				A3C9C58E1F8FCC2E0085BF4C /* RxSamplesUITests.swift in Sources */,
