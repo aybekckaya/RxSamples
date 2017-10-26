@@ -24,6 +24,8 @@ class ButtonCell: UITableViewCell {
 
     @IBOutlet weak var btnComponent: UIButton!
     
+    private let disposeBag = DisposeBag()
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -31,7 +33,9 @@ class ButtonCell: UITableViewCell {
 
     func configureCell(buttonType:FormButtonType , viewModel:FormViewModel) {
         btnComponent.titleLabel?.text = buttonType.textify()
+        
         // binders
+        viewModel.everythingValid?.bind(to: btnComponent.rx.isEnabled).addDisposableTo(disposeBag)
     }
     
     

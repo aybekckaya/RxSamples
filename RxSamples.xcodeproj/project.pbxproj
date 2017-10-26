@@ -35,6 +35,15 @@
 		A30AB5561F991EBE00CA1E27 /* AppConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = A30AB5541F991EBE00CA1E27 /* AppConfig.swift */; };
 		A30AB5571F991EBE00CA1E27 /* AppConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = A30AB5541F991EBE00CA1E27 /* AppConfig.swift */; };
 		A30AB5591F99266700CA1E27 /* RxNetworkUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A30AB5581F99266700CA1E27 /* RxNetworkUITests.swift */; };
+		A3387D2C1FA25E1200B47B03 /* LoginFormVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3387D2A1FA25E1200B47B03 /* LoginFormVC.swift */; };
+		A3387D2D1FA25E1200B47B03 /* LoginFormVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3387D2A1FA25E1200B47B03 /* LoginFormVC.swift */; };
+		A3387D2E1FA25E1200B47B03 /* LoginFormVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3387D2A1FA25E1200B47B03 /* LoginFormVC.swift */; };
+		A3387D2F1FA25E1200B47B03 /* LoginFormVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = A3387D2B1FA25E1200B47B03 /* LoginFormVC.xib */; };
+		A3387D301FA25E1200B47B03 /* LoginFormVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = A3387D2B1FA25E1200B47B03 /* LoginFormVC.xib */; };
+		A3387D311FA25E1200B47B03 /* LoginFormVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = A3387D2B1FA25E1200B47B03 /* LoginFormVC.xib */; };
+		A3387D331FA25E3F00B47B03 /* LoginFormViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3387D321FA25E3F00B47B03 /* LoginFormViewModel.swift */; };
+		A3387D341FA25E3F00B47B03 /* LoginFormViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3387D321FA25E3F00B47B03 /* LoginFormViewModel.swift */; };
+		A3387D351FA25E3F00B47B03 /* LoginFormViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3387D321FA25E3F00B47B03 /* LoginFormViewModel.swift */; };
 		A343D6FF1F9373BB00678CD8 /* ContentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A343D6FD1F9373BB00678CD8 /* ContentCell.swift */; };
 		A343D7001F9373BB00678CD8 /* ContentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A343D6FD1F9373BB00678CD8 /* ContentCell.swift */; };
 		A343D7011F9373BB00678CD8 /* ContentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A343D6FD1F9373BB00678CD8 /* ContentCell.swift */; };
@@ -119,6 +128,9 @@
 		869DFB679808B1728D5AC3A7 /* Pods_RxSamples.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxSamples.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A30AB5541F991EBE00CA1E27 /* AppConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConfig.swift; sourceTree = "<group>"; };
 		A30AB5581F99266700CA1E27 /* RxNetworkUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxNetworkUITests.swift; sourceTree = "<group>"; };
+		A3387D2A1FA25E1200B47B03 /* LoginFormVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginFormVC.swift; sourceTree = "<group>"; };
+		A3387D2B1FA25E1200B47B03 /* LoginFormVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginFormVC.xib; sourceTree = "<group>"; };
+		A3387D321FA25E3F00B47B03 /* LoginFormViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginFormViewModel.swift; sourceTree = "<group>"; };
 		A343D6FD1F9373BB00678CD8 /* ContentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentCell.swift; sourceTree = "<group>"; };
 		A343D6FE1F9373BB00678CD8 /* ContentCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ContentCell.xib; sourceTree = "<group>"; };
 		A343D7061F93766A00678CD8 /* UIView+nibLoad.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+nibLoad.swift"; sourceTree = "<group>"; };
@@ -229,6 +241,16 @@
 				DB707CBBAEAB21B34BA64BAB /* Pods_RxSamplesUITests.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A3387D291FA25DEF00B47B03 /* LoginFormVC */ = {
+			isa = PBXGroup;
+			children = (
+				A3387D2A1FA25E1200B47B03 /* LoginFormVC.swift */,
+				A3387D2B1FA25E1200B47B03 /* LoginFormVC.xib */,
+				A3387D321FA25E3F00B47B03 /* LoginFormViewModel.swift */,
+			);
+			path = LoginFormVC;
 			sourceTree = "<group>";
 		};
 		A343D6FC1F93739900678CD8 /* ContentCell */ = {
@@ -357,6 +379,7 @@
 		A3C9C59B1F8FCCDD0085BF4C /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				A3387D291FA25DEF00B47B03 /* LoginFormVC */,
 				03B5EF941F989AF70076B7C3 /* FormVC */,
 				A343D70A1F937AE700678CD8 /* RxNetworkVC */,
 				A3C9C5A41F8FCD0A0085BF4C /* ContentsVC */,
@@ -512,6 +535,7 @@
 				A3C9C5751F8FCC2E0085BF4C /* Assets.xcassets in Resources */,
 				037736641F98E5860024E4C5 /* ButtonCell.xib in Resources */,
 				03B5EF9A1F989B1A0076B7C3 /* FormVC.xib in Resources */,
+				A3387D2F1FA25E1200B47B03 /* LoginFormVC.xib in Resources */,
 				A343D7021F9373BB00678CD8 /* ContentCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -527,6 +551,7 @@
 				03B5EFA81F989C110076B7C3 /* FormCell.xib in Resources */,
 				037736651F98E5860024E4C5 /* ButtonCell.xib in Resources */,
 				A3C9C5A21F8FCCFA0085BF4C /* ContentsVC.xib in Resources */,
+				A3387D301FA25E1200B47B03 /* LoginFormVC.xib in Resources */,
 				A343D7031F9373BB00678CD8 /* ContentCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -542,6 +567,7 @@
 				03B5EFA91F989C110076B7C3 /* FormCell.xib in Resources */,
 				037736661F98E5860024E4C5 /* ButtonCell.xib in Resources */,
 				A3C9C5A31F8FCCFA0085BF4C /* ContentsVC.xib in Resources */,
+				A3387D311FA25E1200B47B03 /* LoginFormVC.xib in Resources */,
 				A343D7041F9373BB00678CD8 /* ContentCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -701,6 +727,7 @@
 				037736611F98E5860024E4C5 /* ButtonCell.swift in Sources */,
 				A3C9C56B1F8FCC2E0085BF4C /* AppDelegate.swift in Sources */,
 				A343D7191F937DD900678CD8 /* CountryEndpoint.swift in Sources */,
+				A3387D2C1FA25E1200B47B03 /* LoginFormVC.swift in Sources */,
 				A30AB5551F991EBE00CA1E27 /* AppConfig.swift in Sources */,
 				A343D7141F937DAD00678CD8 /* CountryViewModel.swift in Sources */,
 				A343D6FF1F9373BB00678CD8 /* ContentCell.swift in Sources */,
@@ -708,6 +735,7 @@
 				A343D7271F93908000678CD8 /* Country.swift in Sources */,
 				03B5EFA41F989C110076B7C3 /* FormCell.swift in Sources */,
 				A343D71F1F93840D00678CD8 /* CountryCell.swift in Sources */,
+				A3387D331FA25E3F00B47B03 /* LoginFormViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -725,6 +753,7 @@
 				A343D7001F9373BB00678CD8 /* ContentCell.swift in Sources */,
 				A3D7F8881F93B00E00D82E20 /* StringExtensions.swift in Sources */,
 				037736621F98E5860024E4C5 /* ButtonCell.swift in Sources */,
+				A3387D2D1FA25E1200B47B03 /* LoginFormVC.swift in Sources */,
 				A30AB5561F991EBE00CA1E27 /* AppConfig.swift in Sources */,
 				A343D7151F937DAD00678CD8 /* CountryViewModel.swift in Sources */,
 				03B5EFA51F989C110076B7C3 /* FormCell.swift in Sources */,
@@ -732,6 +761,7 @@
 				A343D71A1F937DD900678CD8 /* CountryEndpoint.swift in Sources */,
 				A3C9C59F1F8FCCFA0085BF4C /* ContentsVC.swift in Sources */,
 				A3C9C5831F8FCC2E0085BF4C /* RxSamplesTests.swift in Sources */,
+				A3387D341FA25E3F00B47B03 /* LoginFormViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -749,6 +779,7 @@
 				A343D7011F9373BB00678CD8 /* ContentCell.swift in Sources */,
 				A30AB5591F99266700CA1E27 /* RxNetworkUITests.swift in Sources */,
 				A3D7F8891F93B00E00D82E20 /* StringExtensions.swift in Sources */,
+				A3387D2E1FA25E1200B47B03 /* LoginFormVC.swift in Sources */,
 				037736631F98E5860024E4C5 /* ButtonCell.swift in Sources */,
 				A343D7161F937DAD00678CD8 /* CountryViewModel.swift in Sources */,
 				03B5EFA61F989C110076B7C3 /* FormCell.swift in Sources */,
@@ -756,6 +787,7 @@
 				A343D71B1F937DD900678CD8 /* CountryEndpoint.swift in Sources */,
 				A3C9C5A01F8FCCFA0085BF4C /* ContentsVC.swift in Sources */,
 				A3C9C58E1F8FCC2E0085BF4C /* RxSamplesUITests.swift in Sources */,
+				A3387D351FA25E3F00B47B03 /* LoginFormViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

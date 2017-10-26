@@ -13,16 +13,14 @@ import RxSwift
 enum FormCellType {
     case undefined
     case username
-    case email
     case password
-    case phoneNumber
     
     func placeholderText()->String {
         switch self {
         case .username:
             return "Username"
-        case .email:
-            return "Email"
+        case .password:
+            return "Password"
         default : return ""
         }
     }
@@ -54,8 +52,8 @@ class FormCell: UITableViewCell {
                 .debounce(debounceTime, scheduler: MainScheduler.instance)
                 .distinctUntilChanged()
         }
-        else if cellType == .email {
-            viewModel.email = textForm.rx.text
+        else if cellType == .password {
+            viewModel.password = textForm.rx.text
                 .orEmpty
                 .debounce(debounceTime, scheduler: MainScheduler.instance)
                 .distinctUntilChanged()

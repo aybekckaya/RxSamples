@@ -15,8 +15,9 @@ class FormViewModel {
     //var observer = PublishSubject<String>()
     
     var username:Observable<String>?
-    var email:Observable<String>?
-    var telephoneNumber:Observable<String>?
+    var password:Observable<String>?
+    
+    var everythingValid:Observable<Bool>?
     
     private var disposeBag = DisposeBag()
     
@@ -32,12 +33,18 @@ class FormViewModel {
     }
     
     func setUpRx() {
-        username!.subscribe(onNext: { [weak self] text in
-            print("text username : \(text)")
+       
+        let validUsername = username!.map { $0.characters.count > 0 }
+        let validPassword = password!.map{ $0.characters.count > 0 }
+       
+        everythingValid = Observable.combineLatest(validUsername, validPassword) { $0 && $1 }.shareReplay(1)
+        
+        everythingValid?.subscribe(onNext: { tt in
+            print("tt:\(tt)")
         }).addDisposableTo(disposeBag)
         
-        email!.subscribe(onNext: { [weak self] text in
-             print("text email : \(text)")
+        username!.subscribe(onNext: { text in
+            print("text : \(text)")
         }).addDisposableTo(disposeBag)
         
     }

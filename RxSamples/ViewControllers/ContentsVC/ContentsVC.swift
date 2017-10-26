@@ -15,6 +15,7 @@ class ContentsVC: UIViewController {
     enum Content:String {
         case networking  = "Networking with RxSwift"
         case formPage = "Form page"
+        case loginPage = "Login Sample"
         
         func viewController()->UIViewController {
             switch self {
@@ -22,6 +23,8 @@ class ContentsVC: UIViewController {
                 return RxNetworkVC(nibName: "RxNetworkVC", bundle: nil)
             case .formPage:
                 return FormVC(nibName: "FormVC", bundle: nil)
+            case .loginPage:
+                return LoginFormVC(nibName: "LoginFormVC", bundle: nil)
             }
         }
     }
@@ -51,6 +54,10 @@ class ContentsVC: UIViewController {
             let vc = Content.networking.viewController()
             navigationController?.pushViewController(vc, animated: false)
             break
+        case .LoginRoute:
+            let vc = Content.loginPage.viewController()
+            navigationController?.pushViewController(vc, animated: false)
+            break 
         default:
             setUpRx()
         }

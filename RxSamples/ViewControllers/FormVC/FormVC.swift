@@ -22,7 +22,7 @@ class FormVC: UIViewController, UITableViewDelegate , UITableViewDataSource {
     fileprivate let viewModel = FormViewModel()
     private let disposeBag = DisposeBag()
     
-    fileprivate var fieldsTable:[TableField] = [TableField.formFieldArea(cellType: .username), TableField.formFieldArea(cellType: .email) , TableField.submitButtonArea]
+    fileprivate var fieldsTable:[TableField] = [TableField.formFieldArea(cellType: .username), TableField.formFieldArea(cellType: .password) , TableField.submitButtonArea]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -62,7 +62,7 @@ class FormVC: UIViewController, UITableViewDelegate , UITableViewDataSource {
             submitButtonCell.configureCell(buttonType: .submitButton, viewModel: viewModel)
             return submitButtonCell
         case .formFieldArea(cellType: .username): return formCell(with: .username, indexPath: indexPath)
-        case .formFieldArea(cellType: .email) : return formCell(with: .email, indexPath: indexPath)
+        case .formFieldArea(cellType: .password) : return formCell(with: .password, indexPath: indexPath)
         
         default: return UITableViewCell()
         }
