@@ -19,7 +19,7 @@ class AppConfig {
     internal static let sharedInstance:AppConfig = AppConfig()
     
     // application forced route position . default: no forced route 
-    let currentRoute:AppRoute = AppRoute.LoginRoute
+    let currentRoute:AppRoute = AppRoute.NetworkRoute
 }
 
 

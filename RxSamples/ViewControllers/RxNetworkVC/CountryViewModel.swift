@@ -34,6 +34,8 @@ class CountryViewModel: NSObject {
         if provider == nil {
              provider = RxMoyaProvider<CountryEndpoint>()
         }
+        tupleRequest()
+        
         countryName?.subscribe(onNext: { (text) in
             guard !text.isEmpty else {
                 self.countries.onNext(self.countriesArr)
@@ -51,6 +53,23 @@ class CountryViewModel: NSObject {
 }
 
 extension CountryViewModel {
+    
+    func tupleRequest() {
+        // https://restcountries.eu/rest/v2/lang/es
+        
+        Observable.of([])
+        .flatMapLatest { _ in
+            return self.provider.request(CountryEndpoint.all)
+        }.flatMapLatest { response in
+                return self.provider.request(CountryEndpoint.language(lang: "tr"))
+        }.subscribe(onNext: { finalResponse in
+            print(finalResponse)
+            let jsonArr = try! JSON(data: finalResponse.data)
+            print(jsonArr)
+        }).addDisposableTo(disposeBag)
+        
+    }
+    
     func setAllCountries() {
         provider.request(CountryEndpoint.all).debug().map{response -> [Country] in
             let jsonArr = try! JSON(data: response.data)
